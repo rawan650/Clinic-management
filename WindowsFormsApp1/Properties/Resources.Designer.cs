@@ -63,36 +63,6 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_11_04_at_10_11_34_PM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-11-04 at 10.11.34 PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_11_04_at_10_111 {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-11-04 at 10.111", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2026_11_05_at_2_27_19_AM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2026-11-05 at 2.27.19 AM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2026_11_05_at_2_28_53_AM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2026-11-05 at 2.28.53 AM", resourceCulture);

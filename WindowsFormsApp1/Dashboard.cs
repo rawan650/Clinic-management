@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,7 +28,8 @@ namespace WindowsFormsApp1
 
         private void label4_Click(object sender, EventArgs e)
         {
-
+            new Appointments().Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -60,6 +62,33 @@ namespace WindowsFormsApp1
 
         private void label14_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new charts().Show();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            new patients().Show();
+            this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            new Billing().Show();
+            this.Hide();
         }
     }
 }

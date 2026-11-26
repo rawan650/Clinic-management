@@ -48,10 +48,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Notes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNotes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,7 @@
             this.label5.Size = new System.Drawing.Size(55, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -92,6 +93,7 @@
             this.label4.Size = new System.Drawing.Size(117, 19);
             this.label4.TabIndex = 8;
             this.label4.Text = "Appointments";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -115,6 +117,7 @@
             this.label1.Size = new System.Drawing.Size(95, 19);
             this.label1.TabIndex = 6;
             this.label1.Text = "Dashboard";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -233,6 +236,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -245,6 +249,7 @@
             this.button3.TabIndex = 20;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -257,42 +262,44 @@
             this.button4.TabIndex = 21;
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Name,
-            this.Phone,
-            this.Age,
-            this.Notes});
+            this.colName,
+            this.colPhone,
+            this.colAge,
+            this.colNotes});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(242, 246);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(448, 148);
             this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Name
+            // colName
             // 
-            this.Name.HeaderText = "Name";
-            this.Name.Name = "Name";
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
             // 
-            // Phone
+            // colPhone
             // 
-            this.Phone.HeaderText = "Phone";
-            this.Phone.Name = "Phone";
+            this.colPhone.HeaderText = "Phone";
+            this.colPhone.Name = "colPhone";
             // 
-            // Age
+            // colAge
             // 
-            this.Age.HeaderText = "Age";
-            this.Age.Name = "Age";
+            this.colAge.HeaderText = "Age";
+            this.colAge.Name = "colAge";
             // 
-            // Notes
+            // colNotes
             // 
-            this.Notes.HeaderText = "Notes";
-            this.Notes.Name = "Notes";
+            this.colNotes.HeaderText = "Notes";
+            this.colNotes.Name = "colNotes";
             // 
             // patients
             // 
@@ -349,9 +356,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Age;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Notes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNotes;
     }
 }

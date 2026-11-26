@@ -54,6 +54,8 @@
             this.Patient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Procedure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Statistics = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +84,7 @@
             this.label5.Size = new System.Drawing.Size(55, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "Billing";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -105,6 +108,7 @@
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 7;
             this.label2.Text = "Patients";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -149,6 +153,7 @@
             this.button2.Size = new System.Drawing.Size(170, 99);
             this.button2.TabIndex = 9;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7
             // 
@@ -318,12 +323,27 @@
             this.Status.HeaderText = "Status";
             this.Status.Name = "Status";
             // 
+            // Statistics
+            // 
+            this.Statistics.Location = new System.Drawing.Point(244, 369);
+            this.Statistics.Name = "Statistics";
+            this.Statistics.Size = new System.Drawing.Size(168, 23);
+            this.Statistics.TabIndex = 26;
+            this.Statistics.Text = "Statistics";
+            this.Statistics.UseVisualStyleBackColor = true;
+            this.Statistics.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(926, 450);
+            this.Controls.Add(this.Statistics);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
@@ -381,5 +401,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Patient;
         private System.Windows.Forms.DataGridViewTextBoxColumn Procedure;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.Button Statistics;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

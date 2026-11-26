@@ -93,6 +93,7 @@
             this.label4.Size = new System.Drawing.Size(117, 19);
             this.label4.TabIndex = 8;
             this.label4.Text = "Appointments";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -104,6 +105,7 @@
             this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 7;
             this.label2.Text = "Patients";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -116,6 +118,7 @@
             this.label1.Size = new System.Drawing.Size(95, 19);
             this.label1.TabIndex = 6;
             this.label1.Text = "Dashboard";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -183,6 +186,7 @@
             this.label8.Size = new System.Drawing.Size(54, 17);
             this.label8.TabIndex = 30;
             this.label8.Text = "Patient";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // maskedTextBox2
             // 
@@ -190,6 +194,7 @@
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(216, 20);
             this.maskedTextBox2.TabIndex = 29;
+            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // label7
             // 
@@ -224,6 +229,7 @@
             this.maskedTextBox6.Name = "maskedTextBox6";
             this.maskedTextBox6.Size = new System.Drawing.Size(216, 20);
             this.maskedTextBox6.TabIndex = 43;
+            this.maskedTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox6_MaskInputRejected);
             // 
             // button4
             // 
@@ -236,6 +242,7 @@
             this.button4.TabIndex = 42;
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -248,6 +255,7 @@
             this.button3.TabIndex = 41;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 
@@ -260,6 +268,7 @@
             this.button1.TabIndex = 40;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -272,6 +281,7 @@
             this.button2.TabIndex = 39;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -283,10 +293,11 @@
             this.Column3,
             this.Paid});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(247, 243);
+            this.dataGridView1.Location = new System.Drawing.Point(249, 250);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(450, 150);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Patient
             // 
